@@ -7,24 +7,27 @@
 html, body {
     text-decoration: none;
     height: 100%;
-    overflow: hidden;
     background-color: #e5e5e5;
-
 
 }
 
 .all_box {
-    filter:alpha(opacity=90);
-    -moz-opacity:0.9;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
     -khtml-opacity: 0.9;
     opacity: 0.9;
-    padding-top: 20px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-color: aliceblue;
 
 }
+
+.all_box .topbar {
+    background: url("imags/topbar1.jpg");
+    background-size: 100%;
+    overflow: hidden;
+}
+
 .all_box p {
     position: relative;
     width: 980px;
@@ -38,7 +41,8 @@ html, body {
 }
 
 h1 {
-    margin-bottom: 20px;
+    overflow: hidden;
+    padding:20px 0;
     color: brown;
     text-align: center;
     font-size: 30px;
@@ -53,7 +57,7 @@ h1 {
 }
 
 .div_box ul {
-    border-radius: 1px ;
+    border-radius: 1px;
     width: 980px;
     margin: 0 auto;
     height: 100%;
@@ -73,7 +77,6 @@ h1 {
     color: white;
     font-weight: 400;
     padding-left: 10px;
-
 
 }
 

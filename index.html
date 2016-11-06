@@ -9,34 +9,35 @@
 </head>
 <body>
 <div class="all_box">
-    <h1>
-        Cay-chen的个人导航
-    </h1>
-    <p>
+    <div class="topbar">
+        <h1>
+            Cay-chen的个人导航
+        </h1>
+        <p>
         <span class="today_time">
         </span>
-        <script>
-            var spanTime = document.getElementsByClassName("today_time")[0];
-            var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
-            var aaa = function () {
-                var nowTime = new Date();
-                var month = nowTime.getMonth() + 1;
-                var minTime = nowTime.getMinutes();
-                var secTime = nowTime.getSeconds();
-                if (secTime < 10) {
-                    secTime = "0" + secTime;
+            <script>
+                var spanTime = document.getElementsByClassName("today_time")[0];
+                var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+                var aaa = function () {
+                    var nowTime = new Date();
+                    var month = nowTime.getMonth() + 1;
+                    var minTime = nowTime.getMinutes();
+                    var secTime = nowTime.getSeconds();
+                    if (secTime < 10) {
+                        secTime = "0" + secTime;
+                    }
+                    if (minTime < 10) {
+                        minTime = "0" + minTime;
+                    }
+                    spanTime.innerHTML = nowTime.getFullYear() + "年" + month + "月" + nowTime.getDate() + "日&nbsp" + weekday[nowTime.getDay()] + "&nbsp&nbsp" +
+                            nowTime.getHours() + ":" + minTime + ":" + secTime;
                 }
-                if (minTime < 10) {
-                    minTime = "0" + minTime;
-                }
-                spanTime.innerHTML = nowTime.getFullYear() + "年" + month + "月" + nowTime.getDate() + "日&nbsp" + weekday[nowTime.getDay()] + "&nbsp&nbsp" +
-                        nowTime.getHours() + ":" + minTime + ":" + secTime;
-            }
-            setInterval(aaa, 1000);
+                setInterval(aaa, 1000);
 
-        </script>
-    </p>
-
+            </script>
+        </p>
+    </div>
     <hr/>
     <div class="div_box">
         <ul>
@@ -128,10 +129,10 @@
                         <a href="http://202.85.213.156:8080/agent/AgentLoginAdminServlet" target="_blank">优品道充值</a>
                     </span>
 					 <span>
-                        <a href="http://sales.hxtcpay.com/hxtcpay/index.jsp" target="_blank">业务营销1</a>
+                        <a href="http://sales.hxtcpay.com/hxtcpay/index.jsp" target="_blank">业务营销系统平台</a>
                     </span>
                      <span>
-                        <a href="http://sales.hxtcpay.com/hxtcpay/console/login.jsp" target="_blank">业务营销2</a>
+                        <a href="http://sales.hxtcpay.com/hxtcpay/console/login.jsp" target="_blank">业务营销管理平台</a>
                     </span>
                 </div>
             </li>
